@@ -1,10 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>农历日期转换</title>
+    <!-- 引入 CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="container">
+    <h1>农历日期转换</h1>
+    <p>请选择一个日期和时间：</p>
 
+    <!-- datetime-local 输入框 -->
+    <input type="datetime-local" id="dateInput">
+    <button id="runBtn">运行转换</button>
+
+    <div class="result" id="result"></div>
+  </div>
+
+  <!-- 引入 JS 脚本 -->
+    <script src="libs/lunar.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
